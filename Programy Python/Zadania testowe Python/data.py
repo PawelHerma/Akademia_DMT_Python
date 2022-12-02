@@ -31,11 +31,11 @@ def checkDate(data):
             print("Zla data")
             exit()
 
-       print("Prawidlowa data")
+        print("Prawidlowa data")
 
     else:
-       print("Nieprawidlowe formatowanie")
-         exit()
+        print("Nieprawidlowe formatowanie")
+        exit()
 
 
 data = input("Podaj date w formacie dd-mm-rrrr: ")
