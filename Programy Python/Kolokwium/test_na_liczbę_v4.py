@@ -6,16 +6,12 @@
 
 import re
 
-regex = '\d'
-
-def checknumber():
-    dane = input("Podaj liczbe: ")
-
-    if re.search(regex,dane):
-        print("Twoja liczba to" , dane)
-        exit()
-    else:
+def checknumber(user_input):
+    regex = '^[\d]+$'
+    while not re.match(regex, user_input):
         print("To nie jest liczba. Spróbuj jeszcze raz")
-        checknumber()
+        user_input = input()
+    return user_input
 
-checknumber()
+
+print(checknumber(input("Podaj liczbe: ")))
