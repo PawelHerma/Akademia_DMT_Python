@@ -8,3 +8,5 @@ def wzor(x):
 print("Funkcja 3x^2-6x+1")
 x = float(input("Podaj argument x: "))
 print("Wartość funkcji dla x równego " + str(x) + " wynosi: " + str(wzor(x)))
+
+# test
